@@ -2,75 +2,155 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>The Avengers</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="styles/movies.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>home</li>
-            <li>About us</li>
-            <li>Team</li>
-            <li>Movies</li>
-            <li>Contact</li>
+    <nav class="nav">
+        <a class="nav-logo" href="#home"><img src="assets/img/logo.gif" alt="avengers logo"></a>
+        <ul class="nav-items">
+            <li class="nav-item nav-item--active"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#about-us">About us</a></li>
+            <li class="nav-item"><a href="#team">Team</a></li>
+            <li class="nav-item"><a href="#movies">Movies</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>The Avengers</h1>
+    <header id="home" class="container-fluid">
+        <div class="row">
+            <h1>The Avengers</h1>
+        </div>
     </header>
     <main>
-        <section>
-            <article>
-                <h2>Iron Man</h2>
-                <p>Robert Downey Jr.</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, fugiat ipsam atque magni, quam maiores, ab nesciunt rem sapiente nisi ex voluptate doloribus eum! Possimus eius quibusdam aspernatur nostrum.
-                </p>
-            </article>
-            <article>
-                <h2>Capitán América</h2>
-                <p>Chris Evans</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, fugiat ipsam atque magni, quam maiores, ab nesciunt rem sapiente nisi ex voluptate doloribus eum! Possimus eius quibusdam aspernatur nostrum.
-                </p>
-            </article>
-            <article>
-                <h2>Viuda Negra</h2>
-                <p>Scarlett Johansson</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, fugiat ipsam atque magni, quam maiores, ab nesciunt rem sapiente nisi ex voluptate doloribus eum! Possimus eius quibusdam aspernatur nostrum.
-                </p>
-            </article>
-            <article>
-                <h2>Thor</h2>
-                <p>Chris Hemsworth</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, fugiat ipsam atque magni, quam maiores, ab nesciunt rem sapiente nisi ex voluptate doloribus eum! Possimus eius quibusdam aspernatur nostrum.
-                </p>
-            </article>
-            <article>
-                <h2>Hulk</h2>
-                <p>Mark Ruffalo</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, fugiat ipsam atque magni, quam maiores, ab nesciunt rem sapiente nisi ex voluptate doloribus eum! Possimus eius quibusdam aspernatur nostrum.
-                </p>
-            </article>
-            <article>
-                <h2>Clint Barton Hawkeye</h2>
-                <p>Jeremy Renner</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, fugiat ipsam atque magni, quam maiores, ab nesciunt rem sapiente nisi ex voluptate doloribus eum! Possimus eius quibusdam aspernatur nostrum.
-                </p>
-            </article>
+        <section id="about-us" class="container">
+            <header class="row">
+                <h2>About us</h2>
+            </header>
+            <div class="row">
+                <div class="col-6">
+                    <video src="assets/video/video.mp4" controls>
+                        Video about avengers
+                    </video>
+                </div>
+                <div class="col-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ad veniam nihil minus eaque. Nisi adipisci praesentium cumque vero at perferendis ex hic nobis similique sapiente obcaecati omnis libero eveniet itaque, debitis dolorum exercitationem accusamus quasi ipsam accusantium velit atque pariatur cum blanditiis! Obcaecati, voluptates sapiente molestiae! Quidem consequatur quod accusantium. Veniam quasi, vitae debitis dicta error assumenda deserunt autem et dolorem eius veritatis pariatur, hic. Architecto explicabo, modi praesentium asperiores magnam quaerat commodi.</p>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="container-fluid">
+            <header class="row">
+                <h2>Team</h2>
+            </header>
+            <div class="row">
+                <article class="col-2">
+                    <img src="assets/img/profiles/ironman.jpg" alt="Iron Man">
+                    <h3>Iron Man</h3>
+                    <cite>Robert Downey Jr.</cite>
+                    <p>A self-described genius, billionaire, playboy, and philanthropist with an electromechanical suit of armor of his own invention</p>
+                </article>
+                <article class="col-2">
+                    <img src="assets/img/profiles/capitan-america.jpg" alt="Capitán América">
+                    <h3>Capitán América</h3>
+                    <cite>Chris Evans</cite>
+                    <p>A World War II veteran who was enhanced to the peak of human physicality by an experimental serum and frozen in suspended animation before waking up in the modern world</p>
+                </article>
+                <article class="col-2">
+                    <img src="assets/img/profiles/black-widow.jpg" alt="Viuda Negra">
+                    <h3>Viuda Negra</h3>
+                    <cite>Scarlett Johansson</cite>
+                    <p>A highly trained spy working for S.H.I.E.L.D</p>
+                </article>
+                <article class="col-2">
+                    <img src="assets/img/profiles/thor.jpg" alt="Thor">
+                    <h3>Thor</h3>
+                    <cite>Chris Hemsworth</cite>
+                    <p>The crown prince of Asgard, based on the Norse mythological deity of the same name</p>
+                </article>
+                <article class="col-2">
+                    <img src="assets/img/profiles/hulk.jpg" alt="Hulk">
+                    <h3>Hulk</h3>
+                    <cite>Mark Ruffalo</cite>
+                    <p>A genius scientist who, because of exposure to gamma radiation, transforms into a monster when enraged or agitated</p>
+                </article>
+                <article class="col-2">
+                    <img src="assets/img/profiles/hawk-eye.jpg" alt="Clint Barton Hawkeye">
+                    <h3>Clint Barton Hawkeye</h3>
+                    <cite>Jeremy Renner</cite>
+                    <p>A master archer working as an agent for S.H.I.E.L.D</p>
+                </article>
+            </div>
+        </section>
+        <section id="movies" class="container">
+            <header class="row">
+                <h2>Movies</h2>
+            </header>
+            <div class="row">
+                <article class="col-6">
+                    <img src="assets/img/movie1.jpg" alt="The Avengers 2012">
+                    <h3>The Avengers <time datetime="2012-01-01">(2012)</time></h3>
+                    <p>Nick Fury, the director of S.H.I.E.L.D., gathers the superheroes Iron Man, Thor, Captain America, the Hulk, Black Widow and Hawkeye to fight Thor's brother Loki, who plots to subjugate the Earth.</p>
+                </article>
+                <article class="col-6">
+                    <img src="assets/img/movie2.jpg" alt=">Avengers: Age of Ultron 2015">
+                    <h3>Avengers: Age of Ultron <time datetime="2015-01-01">(2015)</time></h3>
+                    <p>Iron Man, Captain America, Thor, the Hulk, Black Widow, and Hawkeye must work together as the Avengers to defeat Ultron, a technological enemy bent on human extinction, while encountering the powerful twins Pietro and Wanda Maximoff, as well as the new entity Vision.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="container-fluid">
+            <header class="row">
+                <h2>Contact</h2>
+            </header>
+            <form class="container">
+                <div class="form-input row">
+                    <label for="name" class="col-3">Full name</label>
+                    <input class="col-8" required type="text" name="name" id="name" placeholder="Tell us your name" required="">
+                </div>
+                <div class="form-input row">
+                    <label for="email" class="col-3">Email</label>
+                    <input class="col-8" required type="email" name="email" id="email" placeholder="Tell us your email" required pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+">
+                </div>
+                <div class="form-input row">
+                    <label for="male" class="form-radio col-offset-3">Male</label>
+                    <input required type="radio" name="gender" id="male" value="male">
+                    <label for="female" class="form-radio">Female</label>
+                    <input required type="radio" name="gender" id="female" value="female">
+                </div>
+                <div class="form-input row">
+                    <label for="birthdate" class="col-3">Birthdate</label>
+                    <input class="col-8" required type="date" name="birthdate" id="birthdate">
+                </div>
+                <div class="form-input row">
+                    <label for="message" class="col-12">Message</label>
+                    <textarea name="message" class="col-12" id="message" cols="30" rows="10" placeholder="What do you need?" required></textarea>
+                </div>
+                <button type="submit" class="col-12">Enviar</button>
+            </form>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li>Website</li>
-            <li>Facebook</li>
-            <li>Twitter</li>
+    <footer id="footer" class="container-fluid footer">
+        <ul class="footer-items col-8">
+            <li class="footer-item"><a href="http://marvel.com/avengers" target="_blank">Website</a></li>
+            <li class="footer-item"><a href="http://facebook.com/avengers/" target="_blank">Facebook</a></li>
+            <li class="footer-item"><a href="http://twitter.com/avengers" target="_blank">Twitter</a></li>
+            <li class="footer-item"><a href="http://instagram.com/avengersmovie" target="_blank">Instagram</a></li>
         </ul>
-        <p>Marvel Studios 2017</p>
+        <p class="footer-copyright col-4">
+            <mark>Marvel Studios</mark>
+            <time datetime="2017-01-01">2017</time>
+        </p>
     </footer>
 </body>
 
