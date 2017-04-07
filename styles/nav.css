@@ -1,11 +1,14 @@
 .nav {
-    background-color: black;
+    background-color: #141214;
     font-size: 1.1em;
     position: fixed;
     width: 100%;
     top: 0;
     height: 64px;
-    z-index: 2;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav .nav-item {
@@ -33,21 +36,16 @@
     color: black;
 }
 
-.nav > .nav-logo {
-    display: inline-block;
-    float: left;
-    position: relative;
-    left: 15px;
-    top: 20px;
-}
-
 .nav > .nav-items {
     display: inline-block;
     width: 80%;
     text-align: right;
     padding: 0;
     margin: 0;
-    float: right;
+}
+
+.nav .nav-logo {
+    margin-left: 15px;
 }
 
 .nav > .nav-logo > img {

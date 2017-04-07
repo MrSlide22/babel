@@ -6,6 +6,17 @@
     width: calc(100vw - 47px);
     height: calc(100vh - 64px);
     margin-top: 64px;
+    position: relative;
+}
+
+#home:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #home h1 {
