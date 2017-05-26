@@ -1,0 +1,17 @@
+#about-us {
+    video {
+        width: 80%;
+    }
+    @include tablet {
+        width: 100%;
+        text-align: center;
+        div.row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .col-6 {
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.footer {
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    p {
+        margin: 0;
+    }
+    .footer-items {
+        padding: 0;
+        margin: 0;
+        .footer-item {
+            display: inline-block;
+            a {
+                margin-left: 15px;
+                color: $inverse-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .footer-copyright {
+        text-align: right;
+        mark {
+            color: $inverse-color;
+            background: transparent;
+        }
+        time {
+            margin-right: 15px;
+            color: $inverse-color;
+        }
+    }
+}

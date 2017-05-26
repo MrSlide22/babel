@@ -1,0 +1,49 @@
+form {
+    font-size: 1.2em;
+    .form-input {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        input,
+        textarea {
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+            margin: 0 -15px;
+            &:focus,
+            &:invalid:focus {
+                outline: none;
+                border-color: #aaa;
+            }
+            &:valid {
+                border-color: #0a0;
+            }
+            &:invalid {
+                border-color: #a00;
+            }
+        }
+        input {
+            &[type="radio"] {
+                margin: 0;
+            }
+        }
+    }
+    button[type="submit"] {
+        background-color: $primary-color;
+        color: $inverse-color;
+        border: 1px solid $primary-color;
+        cursor: pointer;
+        transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        will-change: border-color, transform;
+        &:hover,
+        &:focus {
+            transform: scale(1.01);
+            background-color: $primary-color;
+        }
+        &:active {
+            border: 2px solid $inverse-color;
+            background-color: $primary-color!important;
+            color: $inverse-color;
+            transform: scale(0.99);
+        }
+    }
+}

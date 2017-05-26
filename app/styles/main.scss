@@ -1,0 +1,44 @@
+@import "normalize";
+// bower:scss
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "variables";
+@import "responsive";
+@import "about-us";
+@import "cookies";
+@import "fonts";
+@import "footer";
+@import "form";
+@import "home";
+@import "map";
+@import "movies";
+@import "nav";
+@import "team";
+@import "typo";
+section:nth-child(2n) {
+    background-color: #f7f4d9;
+}
+
+section {
+    padding-bottom: 35px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-primary-invert {
+    background-color: #fff;
+    color: #000;
+}

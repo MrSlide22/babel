@@ -1,0 +1,23 @@
+#home {
+    background-image: url(../assets/img/avengers.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: $nav-height;
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: transparentize($primary-color, 0.5);
+    }
+    h1 {
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,25 @@
+#movies {
+    &>div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
+    article {
+        text-align: center;
+        img {
+            width: 100%;
+            transition: box-shadow $transition-fast, transform $transition-fast;
+            will-change: box-shadow, transform;
+            height: 500px;
+            object-fit: cover;
+            &:hover {
+                box-shadow: 0px 5px 20px lighten($primary-color, 50%);
+                transform: translateY(-5px);
+            }
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}

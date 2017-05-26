@@ -1,0 +1,17 @@
+.cookies {
+    transition: transform $transition-slowest;
+    width: 100%;
+    color: $inverse-color;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background-color: $primary-color;
+    padding: 10px;
+    &.ok {
+        transform: translateY(100px);
+    }
+    p {
+        margin: 0;
+    }
+}

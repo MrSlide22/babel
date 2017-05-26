@@ -1,0 +1,115 @@
+.nav {
+    background-color: $primary-color;
+    font-size: 1.1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: $nav-height;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-items {
+        display: inline-block;
+        width: 80%;
+        text-align: right;
+        padding: 0;
+        margin: 0;
+        .nav-item {
+            list-style: none;
+            display: inline-block;
+            height: $nav-height;
+            margin: 0;
+            a {
+                color: $inverse-color;
+                text-decoration: none;
+                height: 100%;
+                display: inline-block;
+                padding: 0 15px;
+                line-height: $nav-height;
+                text-transform: uppercase;
+                transition: background-color $transition-fast, color $transition-fast;
+                will-change: background-color, color;
+            }
+            &.nav-item--active,
+            &:hover {
+                a {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    .nav-logo {
+        margin-left: 15px;
+        img {
+            height: 30px;
+            width: auto;
+        }
+    }
+    .menu-btn {
+        color: $inverse-color;
+        font-size: 1.2em;
+        display: none;
+        cursor: pointer;
+        padding: 3px;
+        .bar {
+            width: 20px;
+            height: 1px;
+            padding: 2px;
+            display: block;
+            opacity: 1;
+            border-bottom: 2px solid $inverse-color;
+        }
+    }
+}
+
+@include mobile {
+    .nav {
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        .nav-logo,
+        .menu-btn {
+            margin: 20px;
+        }
+        .nav-items {
+            height: 0;
+            overflow: hidden;
+            transition: height $transition-medium;
+            .nav-item {
+                display: block;
+                text-align: center;
+            }
+        }
+        &.open {
+            .nav-items {
+                height: $nav-height * 5;
+                .nav-item {
+                    height: auto;
+                }
+            }
+            .menu-btn {
+                .bar {
+                    opacity: 0;
+                    &:first-of-type {
+                        opacity: 1;
+                        display: block;
+                        transform: rotate(45deg) translate(3px, 4px);
+                    }
+                    &:last-of-type {
+                        opacity: 1;
+                        display: block;
+                        transform: rotate(-45deg) translate(3px, -6.5px);
+                    }
+                }
+            }
+        }
+        .menu-btn {
+            display: block;
+        }
+        .menu-btn .bar {
+            transition: transform $transition-medium ease, opacity $transition-medium ease;
+        }
+    }
+}

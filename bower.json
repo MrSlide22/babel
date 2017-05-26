@@ -1,0 +1,25 @@
+{
+    "name": "avengers-webpage",
+    "homepage": "https://github.com/MrSlide22/babel",
+    "description": "",
+    "main": "",
+    "keywords": [
+        "avengers",
+        "babel",
+        "keepcoding"
+    ],
+    "authors": [
+        "Pablo Aragón Moreno <pablo.aragon@babel.es>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap-sass": "^3.3.7"
+    }
+}
